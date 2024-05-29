@@ -32,7 +32,6 @@ document.addEventListener("DOMContentLoaded", (e) => {
         redSquareResult.background = redSquareStyle.getPropertyValue('background-color') === "rgb(255, 0, 0)" ? true : false;
         redSquareResult.margin = redSquareStyle.getPropertyValue('margin') === "auto" ? true : false;
     
-        console.log(redSquareResult);
         if (redSquareResult.width &&
             redSquareResult.height &&
             redSquareResult.background &&
@@ -47,12 +46,12 @@ document.addEventListener("DOMContentLoaded", (e) => {
                 errorInnerHTML += "Pédro ne sait plus ou donner de la tête. Votre carré ne fait clairement pas 70 pixels de haut !<br><br>";
             }
             if (!(redSquareResult.background)) {
-                errorInnerHTML += "Pédro sors des lunettes de sa poche pour s'assurer que sa vue ne le trompe pas, mais il n'avait pas tort. Votre carré n'est clairement pas rouge !<br><br>";
+                errorInnerHTML += "Pédro sort des lunettes de sa poche pour s'assurer que sa vue ne le trompe pas, mais il n'avait pas tort. Votre carré n'est clairement pas rouge !<br><br>";
             }
             if (!(redSquareResult.margin)) {
-                errorInnerHTML += "Pédro sors sa règle pour mesurer l'alignement de votre carré et la sentence est irrévocable. Votre carré n'est pas correctement aligné ! (Conseil : Utilisez l'attribut \"margin\")<br><br>";
+                errorInnerHTML += "Pédro sort sa règle pour mesurer l'alignement de votre carré et la sentence est irrévocable. Votre carré n'est pas correctement aligné ! (Conseil : Utilisez l'attribut \"margin\")<br><br>";
             }
             exerciceFailure(errorInnerHTML);
         }
     }
-})
+});
