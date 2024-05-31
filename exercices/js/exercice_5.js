@@ -6,8 +6,6 @@ function generateNextButton(href) {
     nextButton.innerHTML = "Suivant &rarr;"
 
     document.querySelector('nav').appendChild(nextButton);
-
-    console.log(nextButton);
 }
 
 function exerciceSuccess() {
