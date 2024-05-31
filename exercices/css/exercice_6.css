@@ -1,0 +1,12 @@
+.recette {
+    display: table;
+    margin: 0 auto;
+}
+
+.recette li {
+    text-align: left;
+}
+
+span.ok {
+    text-decoration: line-through;
+}
