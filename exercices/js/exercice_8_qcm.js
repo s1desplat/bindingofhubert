@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 function checkAnswers(e) {
     e.preventDefault();
     let answers = document.querySelectorAll("select");
-    let validAnswers = ["a", "c", "a", "c"];
+    let validAnswers = ["c", "a", "c", "b", "a"];
     let complete = true;
     let next_section = document.getElementById("next-section");
 

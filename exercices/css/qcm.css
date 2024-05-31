@@ -1,0 +1,45 @@
+.btn-centered {
+    margin: auto;
+}
+
+.valid-answer {
+    color: green;
+    font-weight: bold;
+}
+
+.wrong-answer {
+    color: red;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+.question-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.question-column {
+    flex-grow: 1;
+    width: 33%;
+    text-align: left;
+    font-size: 11px;
+}
+
+.bottom-selector {
+    margin-bottom: 15px;
+}
+
+.answer-green {
+    color: green;
+}
+
+.answer-red {
+    color: red;
+}
+
+.answer-blue {
+    color: blue;
+}
