@@ -12,7 +12,7 @@ function exerciceSuccess() {
     generateNextButton('exercice_7.html');
 
     const successText = document.querySelector('.exercice section p');
-    successText.innerHTML = "Félicitations ! Pédro hume une divine odeur de gras et de rhubarbe qui l'attire vers vos \"\"cookies\"\".<br><br>Il semble complètement repu (il ne bouge plus ?)."
+    successText.innerHTML = "<i>Félicitations ! Pédro hume une divine odeur de gras et de rhubarbe qui l'attire vers vos \"\"cookies\"\".<br><br>Après s'être goinfré de toute la fournée, il semble complètement repu et s'allonge sur le sol dans le coin de la pièce. Vous vous assurez tout de même qu'il respire encore avant de continuer votre quête.<i><br><br><br><img class='illustration' src='../img/pedro_cookies.jpeg'></img>"
 }
 
 function getRandomInt(max) {
@@ -37,10 +37,11 @@ function areCheckboxesAllChecked(checkboxes) {
     const keys = Object.keys(ingredientList).filter(k=>ingredientList[k]===false);
     if (keys.length) {
         const randomGrognements = ['Grrnnrnr', 'Gruuiiik', 'Scrogneugneu', 'Kreooog', 'Squeeeeee'];
-        let errorInnerHTML = "<br>Pédro vous épie au loin et remarque que votre recette n'est pas complète, il marmonne dans sa moustache :<br><br>"
+        let errorInnerHTML = "<i>Pédro vous épie au loin et remarque que votre recette n'est pas complète, il marmonne dans sa moustache :<br><br>"
         keys.forEach((key) => {
-            errorInnerHTML += "\"" + randomGrognements[getRandomInt(5)] + ", t'as oublié de cocher la case " + key + " d'abord\"<br><br>";
+            errorInnerHTML += "\"" + randomGrognements[getRandomInt(5)] + ", t'as oublié de cocher la case " + key + " d'abord.\"<br><br>";
         });
+        errorInnerHTML += "</i>Si vous n'avez pas de case à cocher pour vos ingrédients, n'hésitez pas à recopier celle qui existe déjà dans l'HTML ! (en modifiant l\'attribut \"name\" bien entendu)"
         document.querySelector('section p span').innerHTML = errorInnerHTML;
         return false;
     }
@@ -59,7 +60,7 @@ function checkIfBeurreIsReallyBigAndBold() {
         if (beurreDivResult.fontWeight >= 700 && beurreDivResult.fontSize >= 30) {
             return true;
         } else {
-            let errorInnerHTML = "<br>";
+            let errorInnerHTML = "";
             if (beurreDivResult.fontWeight < 700) {
                 errorInnerHTML += "Votre beurre ne semble pas assez gras. N'hésitez pas à le faire épaissir (indice : font-weight)<br><br>"
             }
@@ -69,6 +70,9 @@ function checkIfBeurreIsReallyBigAndBold() {
             document.querySelector('section p span').innerHTML = errorInnerHTML;
             return false;
         }
+    } else {
+        document.querySelector('section p span').innerHTML = "Vous avez bien crée une entrée de liste pour votre beurre, mais il n'a pas de nom...";
+        return false;
     }
 }
 

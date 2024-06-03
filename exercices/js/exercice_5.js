@@ -12,11 +12,11 @@ function exerciceSuccess() {
     generateNextButton('exercice_6.html');
 
     const successText = document.querySelector('.exercice section p');
-    successText.innerHTML = "Félicitations ! Pédro est impressionné par votre talent d'artiste.<br><br>Cependant il n'a pas l'air beaucoup plus calme qu'avant. Il faut croire que le rouge n'est pas une couleur qui calme."
+    successText.innerHTML = "<i>Félicitations ! Pédro est impressionné par votre talent d'artiste.<br><br>Cependant il n'a pas l'air beaucoup plus calme qu'avant. Il faut croire que le rouge n'est pas une couleur qui calme.</i><br><br><img class='illustration' src='../img/hubert_carrerouge_nul.png'></img>"
 }
 
 function exerciceFailure(error) {
-    const errorText = document.querySelector('.exercice section p');
+    const errorText = document.querySelector('.exercice section span');
     errorText.innerHTML = error;
 }
 

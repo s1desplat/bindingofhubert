@@ -160,3 +160,9 @@ input[type=text] {
 	border-radius: 50%;
 	display: inline-block;
 }
+
+.illustration {
+	display: block;
+	margin: auto;
+	max-width: 50%;
+}
