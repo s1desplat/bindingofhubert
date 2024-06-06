@@ -166,3 +166,69 @@ input[type=text] {
 	margin: auto;
 	max-width: 50%;
 }
+
+.hubert-id {
+	position: absolute;
+  	border: solid 1px black;
+  	width: 270px;
+  	height: 120px;
+  	background-color: #89CFF0;
+  	padding: 10px;
+  	font-size: 14px;
+}
+
+.hubert-id span {
+	margin-left: 6px;
+}
+
+.hubert-id-photo {
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	width: 25%;
+}
+
+.badges {
+	position: absolute;
+	top: 42px;
+}
+
+.badge {
+	background: url('../img/hubert_badges.webp');
+	background-size: 160px;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+}
+
+.badge-1 {
+	background-position: 0px 0px;
+}
+
+.badge-2 {
+	background-position: 40px 0px;
+}
+
+.badge-3 {
+	background-position: 80px 0px;
+}
+
+.badge-4 {
+	background-position: 120px 0px;
+}
+
+.badge-5 {
+	background-position: 0px 40px;
+}
+
+.badge-6 {
+	background-position: 40px 40px;
+}
+
+.badge-7 {
+	background-position: 80px 40px;
+}
+
+.badge-8 {
+	background-position: 120px 40px;
+}
