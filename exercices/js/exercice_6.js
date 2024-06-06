@@ -1,3 +1,10 @@
+function addNewBadge(badgeName, lineClass) {
+    const newBadge = document.createElement("div");
+    newBadge.classList.add('badge');
+    newBadge.classList.add(badgeName);
+    document.querySelector(lineClass).append(newBadge);
+}
+
 function generateNextButton(href) {
     const nextButton = document.createElement("a");
     nextButton.classList.add("btn");
@@ -10,6 +17,7 @@ function generateNextButton(href) {
 
 function exerciceSuccess() {
     generateNextButton('exercice_7.html');
+    addNewBadge('badge-6', '.ligne-2');
 
     const successText = document.querySelector('.exercice section p');
     successText.innerHTML = "<i>Félicitations ! Pédro hume une divine odeur de gras et de rhubarbe qui l'attire vers vos \"\"cookies\"\".<br><br>Après s'être goinfré de toute la fournée, il semble complètement repu et s'allonge sur le sol dans le coin de la pièce. Vous vous assurez tout de même qu'il respire encore avant de continuer votre quête.<i><br><br><br><img class='illustration' src='../img/pedro_cookies.jpeg'></img>"

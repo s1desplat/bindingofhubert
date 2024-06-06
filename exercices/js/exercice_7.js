@@ -10,9 +10,17 @@ function generateNextButton(href) {
     document.querySelector('nav').appendChild(nextButton);
 }
 
+function addNewBadge(badgeName, lineClass) {
+    const newBadge = document.createElement("div");
+    newBadge.classList.add('badge');
+    newBadge.classList.add(badgeName);
+    document.querySelector(lineClass).append(newBadge);
+}
+
 function exerciceSuccess() {
     generateNextButton('exercice_8_qcm.html');
     generateSealOfApproval();
+    addNewBadge('badge-7', '.ligne-2');
 
     isExerciceOk = true;
     const successText = document.querySelector('.exercice section');

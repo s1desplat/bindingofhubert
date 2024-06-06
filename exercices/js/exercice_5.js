@@ -1,3 +1,10 @@
+function addNewBadge(badgeName, lineClass) {
+    const newBadge = document.createElement("div");
+    newBadge.classList.add('badge');
+    newBadge.classList.add(badgeName);
+    document.querySelector(lineClass).append(newBadge);
+}
+
 function generateNextButton(href) {
     const nextButton = document.createElement("a");
     nextButton.classList.add("btn");
@@ -10,6 +17,7 @@ function generateNextButton(href) {
 
 function exerciceSuccess() {
     generateNextButton('exercice_6.html');
+    addNewBadge('badge-5', '.ligne-2');
 
     const successText = document.querySelector('.exercice section p');
     successText.innerHTML = "<i>Félicitations ! Pédro est impressionné par votre talent d'artiste.<br><br>Cependant il n'a pas l'air beaucoup plus calme qu'avant. Il faut croire que le rouge n'est pas une couleur qui calme.</i><br><br><img class='illustration' src='../img/hubert_carrerouge_nul.png'></img>"

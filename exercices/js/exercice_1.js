@@ -1,4 +1,12 @@
+function addNewBadge(badgeName, lineClass) {
+    const newBadge = document.createElement("div");
+    newBadge.classList.add('badge');
+    newBadge.classList.add(badgeName);
+    document.querySelector(lineClass).append(newBadge);
+}
+
 function exerciceButtonSuccess() {
+    addNewBadge('badge-1', '.ligne-1');
     document.getElementById('section-finish').classList.remove('caché');
 }
 
