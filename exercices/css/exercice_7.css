@@ -1,0 +1,70 @@
+/*
+   Beaucoup de style est déjà présent pour le CERFA de l'exercice 7
+
+   Si vous êtes curieux.se n'hésitez pas à expérimenter avec le CSS
+   et à poser des questions aux pédagos par rapport aux différentes
+   syntaxes et éléments de styles que vous ne connaissez pas.
+*/
+
+.exercice-7 form[id^="cerfa-"] {
+    padding: 20px;
+    border: 2px solid rgb(227, 38, 54);
+}
+
+.exercice-7 form input[type="submit"] {
+    position: relative;
+    top: 165px;
+}
+
+.cerfa-element {
+    min-height: unset;
+    margin-top: 20px;
+}
+
+.cerfa-element label {
+    text-align: left;
+    display: inline-block;
+}
+
+.cerfa-element input,
+.cerfa-element select {
+    float: right;
+    width: 45%;
+}
+
+.cerfa-title {
+    text-align: left;
+    color: rgb(227, 38, 54);
+    padding: 10px 0;
+    font-size: 30px;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.signature {
+    display: block;
+    width: 30%;
+    margin-left: 70%;
+    border: 2px solid rgb(227, 38, 54);
+}
+
+.signature-titre {
+    text-align: right;
+    margin-top: 30px;
+}
+
+.conseils {
+    color: red;
+}
+
+.invalide {
+    color: red;
+    border: 2px solid red;
+}
+
+.seal-of-approval {
+    position: absolute;
+    max-width: 150px;
+    left: 93px;
+    bottom: 44px;
+    transform: rotate(-12deg);
+}

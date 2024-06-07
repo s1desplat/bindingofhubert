@@ -1,3 +1,10 @@
+function addNewBadge(badgeName, lineClass) {
+    const newBadge = document.createElement("div");
+    newBadge.classList.add('badge');
+    newBadge.classList.add(badgeName);
+    document.querySelector(lineClass).append(newBadge);
+}
+
 document.addEventListener("DOMContentLoaded", (e) => {
     var button = document.querySelector("a.btn");
     var selects = document.querySelectorAll("select");
@@ -32,6 +39,8 @@ function checkAnswers(e) {
         }
     })
 
-    if (complete)
+    if (complete) {
+        addNewBadge('badge-4', '.ligne-1');
         next_section.classList.remove("hidden");
+    }
 }

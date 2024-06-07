@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/generique.css">
+    <link rel="stylesheet" href="../css/exercice_7.css">
+    <script src="../js/exercice_7.js"></script>
+    <title>Hubert : Exercice 7</title>
+</head>
+<body>
+    <div class="hubert-id">
+        <span>Hubert le Niglo</span>
+        <img class="hubert-id-photo" src="../img/hubert.webp">
+        <div class="badges">
+            <div class="ligne-1">
+                <div class="badge badge-1"></div>
+                <div class="badge badge-2"></div>
+                <div class="badge badge-3"></div>
+                <div class="badge badge-4"></div>
+            </div>
+            <div class="ligne-2">
+                <div class="badge badge-5"></div>
+                <div class="badge badge-6"></div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="exercice">
+            <header>
+                7
+            </header>
+            <section>
+                <p>
+                    <i>Vous sentez que vous approchez du but. Après avoir bravé les épreuves les plus rudes, une dernière étape se présente à vous.<br>
+                    <br>
+                    Vous arrivez enfin face au château, il est si grand que vous en perdriez presque la tête.<br>
+                    <br>
+                    Un garde vous interpelle et vous demande de renseigner un formulaire pour pouvoir rentrer. Armé de courage et de patience administrative, vous récupérez la feuille fournie par le garde... avant de vous rendre compte qu'il s'agit d'une feuille vide !<br>
+                    <br>
+                    Vous retournez le voir afin de lui indiquer la supercherie, mais ce dernier vous répond "Non, non c'est normal, vous devez simplement le faire vous même." avant de vous expliquer les choses à remplir. Ce n'est quand même pas très malin..</i><br>
+                    <br>
+                    <br>
+                    <span>Créez un formulaire identifié "cerfa-67042-b". Ce dernier doit contenir les champs suivants :
+                        <ul>
+                            <li>
+                                Pseudonyme [type: input]
+                            </li>
+                            <li>
+                                Date de demande d'entretien [type: date]
+                            </li>
+                            <li>
+                                Personne que vous venez quérir [type: select]
+                                <span>Il faut pouvoir choisir parmi les 5 personnalités suivantes :</span>
+                                <ul>
+                                    <li>
+                                        Sa Majesté La Reine Dénèj [value: reine]
+                                    </li>
+                                    <li>
+                                        Son Altesse Le Roi Consort Tilèj [value: roi]
+                                    </li>
+                                    <li>
+                                        Grand Intendant à la Cour Jean-Eustache De La Plata [value: intendant]
+                                    </li>
+                                    <li>
+                                        Grand Mage de la Cour Pédro De La Vega [value: mage]
+                                    </li>
+                                    <li>
+                                        Commis aux cuisines de la Cour Philippe-Pochtron [value: cuisine]
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Validation du formulaire [type: submit] [value: "Envoyer le CERFA"]
+                            </li>
+                        </ul>
+                    </span>
+                    <span class="conseils"></span>
+                </p>
+            </section>
+            <footer>
+                <div class="exercice-7">
+                    <!-- 
+                        Pour vous aider, voici la structure que vous devez respecter
+                        pour définir un élément de formulaire standard.
+                    
+                        <div class="cerfa-element">
+                            <label for="votre-nom">Votre label</label>
+                            <input type="votre-type" name="votre-nom"> 
+                        </div>
+
+                        Si vous avez des difficultés avec les éléments différents (select
+                        et input) n'hésitez pas à demander aux pédagos.
+
+                        Pro-tip : Le submit n'est pas un "cerfa-element"
+                    -->
+                    <form id="cerfa-67042-b">
+                        <div class="cerfa-element">
+                            <label for="pseudonyme">Pseudonyme</label>
+                            <input type="text" name="pseudonyme">
+                        </div>
+                    
+                        <div class="cerfa-element">
+                            <label for="date">Date de demande d'entretien</label>
+                            <input type="date" name="date">
+                        </div>
+                    
+                        <div class="cerfa-element">
+                            <label for="personne">Personne que vous venez quérir</label>
+                            <select name="personne" id="personne">
+                                <option value="reine">Sa Majesté La Reine Dénej</option>
+                                <option value="roi">Son Altesse Le Roi Consort Tilèj</option>
+                                <option value="intendant">Intendant à la Cour Jean-Eustache De La Plata</option>
+                                <option value="mage">Mage de la Cour Pédro De La Vega</option>
+                                <option value="cuisine">Commis aux cuisines de la Cour Philippe-Pochtron</option>
+                            </select>
+                        </div>
+                    
+                        <input type="submit" value="Envoyer le CERFA"/>
+                    </form>
+                </div>
+            </footer>
+          </div>
+          <nav>
+          </nav>
+        </div>
+    </div>
+</body>
+</html>
