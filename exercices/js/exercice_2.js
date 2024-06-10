@@ -19,9 +19,20 @@ function generateNextButton(href) {
     console.log(nextButton);
 }
 
+function exerciceError(error) {
+
+}
+
 document.addEventListener("DOMContentLoaded", (e) => {
-    document.getElementById('btn1').onclick = function () {
-        document.getElementById("section-2").classList.remove("caché");
+    const btn1 = document.getElementById('btn1');
+    btn1.onclick = function () {
+        const style = window.getComputedStyle(btn1);
+        console.log(style.display);
+        if (style.display === 'block') {
+            exerciceError("Ah");
+        } else if (style.display === 'inline-block') {
+            document.getElementById("section-2").classList.remove("caché");
+        }
     }
 
     document.getElementById('btn2').onclick = function () {

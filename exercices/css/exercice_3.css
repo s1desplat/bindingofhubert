@@ -1,0 +1,84 @@
+.btn-centered {
+    margin: auto;
+}
+
+.caché {
+    display: none;
+}
+
+
+/* Premier trou  */
+/* Un seul .texte à la fois  */
+
+
+/* .texte {
+	font-size: 25;
+    background-color: #000000;
+    color: #000000;
+    border: 1px solid #ccc;
+} */
+
+/* .texte {
+	font-size: 15;
+    background-color: #000000;
+    color: #fff;
+    border: 1px solid #ccc;
+} */
+
+/* .texte {
+	font-size: 20;
+    background-color: #f0f0f0;
+    color: #000;
+    border: 1px solid #ccc;
+} */
+
+/* Fin du premier trou  */
+
+
+/* Deuxième trou*/
+/* Un seul .selection à la fois  */
+
+/* .selection {
+    display: inline-block;
+    width: 0%;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px;
+    color: #000;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+    text-decoration: none;
+} */
+
+
+/* .selection {
+    width: 50%;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px;
+    color: #000;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    display: none;
+    text-decoration: none;
+} */
+
+/* .selection {
+    display: inline-block;
+    width: 50%;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px;
+    color: #000;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    text-decoration: none;
+} */
+
+/* Fin du deuxième trou  */

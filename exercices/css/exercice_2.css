@@ -1,14 +1,23 @@
-.btn-centered {
-    margin: auto;
-}
-
 .caché {
     display: none;
 }
 
 .btn1 {
+    /* Premier trou*/
+    /* Voici votre premier trou en css, 
+    /* essayer d'afficher le bouton en utilisant une des informations ci-dessous*/
+    
+    /* display: block; */
+    /* display: none; */
+    /* display: inline-block; */
 }
 
 .btn2 {
-    margin: 10px
+    /* Premier trou*/
+    /* Attention cette fois-ci le bouton est "techniquement" affiché*/
+    /* mais peut être que changer un paramètre pourrait permettre de l'afficher complètement*/
+    
+    /* margin: 0px; */
+    /* width: 0px; */
+    /* height: 0px; */
 }
