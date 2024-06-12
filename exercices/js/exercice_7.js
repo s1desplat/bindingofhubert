@@ -18,7 +18,7 @@ function addNewBadge(badgeName, lineClass) {
 }
 
 function exerciceSuccess() {
-    generateNextButton('exercice_8_qcm.html');
+    generateNextButton('exercice_8.html');
     generateSealOfApproval();
     addNewBadge('badge-7', '.ligne-2');
 
