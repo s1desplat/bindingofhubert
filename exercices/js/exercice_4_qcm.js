@@ -5,9 +5,20 @@ function addNewBadge(badgeName, lineClass) {
     document.querySelector(lineClass).append(newBadge);
 }
 
+function checkSmartCheese() {
+    const nextDiv = document.querySelector('#next-section');
+    if (!(nextDiv.classList.contains("hidden"))) {
+        const newLoreText = document.createElement('i');
+        newLoreText.innerHTML = "<br><br>Pédro vous regarde du coin de l'oeil pendant que vous vous en allez, il sait ce que vous avez fait pour passer son épreuve..";
+        nextDiv.append(newLoreText);
+    };
+}
+
 document.addEventListener("DOMContentLoaded", (e) => {
     var button = document.querySelector("a.btn");
     var selects = document.querySelectorAll("select");
+
+    checkSmartCheese();
 
     if (button) {
         button.addEventListener("click", checkAnswers);

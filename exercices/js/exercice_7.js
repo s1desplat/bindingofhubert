@@ -2,8 +2,7 @@ let isExerciceOk = false;
 
 function generateNextButton(href) {
     const nextButton = document.createElement("a");
-    nextButton.classList.add("btn");
-    nextButton.classList.add("suivant");
+    nextButton.classList.add(...["btn", "suivant"]);
     nextButton.setAttribute("href", href);
     nextButton.innerHTML = "Suivant &rarr;"
 
@@ -24,7 +23,7 @@ function exerciceSuccess() {
 
     isExerciceOk = true;
     const successText = document.querySelector('.exercice section');
-    successText.innerHTML = "<i>Après un examen minutieux de votre formulaire, le garde vous laisse pénétrer dans l'enceinte du chateau.<br><br>Vous sentez que l'énergie magique de l'artéfact tant désiré se rapproche alors que vous approchez du laboratoire du Mage de la Cour.<br><br>Vous toquez fermement à la porte, et vous y retrouvez un visage familier..</i>"; // TODO : Lore ex 7 réussi
+    successText.innerHTML = "<i>Après un examen minutieux de votre formulaire, le garde vous laisse pénétrer dans l'enceinte du chateau.<br><br>Vous sentez que l'énergie magique de l'artéfact tant désiré se rapproche alors que vous approchez du laboratoire du Mage de la Cour.<br><br>Vous toquez fermement à la porte, et vous y retrouvez un visage familier..</i><br><br><img class='illustration' src='../img/hubert_chateau2.webp' alt='Hubert chateau'>"; // TODO : Lore ex 7 réussi
 }
 
 function generateSealOfApproval() {

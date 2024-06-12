@@ -7,8 +7,7 @@ function addNewBadge(badgeName, lineClass) {
 
 function generateNextButton(href) {
     const nextButton = document.createElement("a");
-    nextButton.classList.add("btn");
-    nextButton.classList.add("suivant");
+    nextButton.classList.add(...["btn", "suivant"]);
     nextButton.setAttribute("href", href);
     nextButton.innerHTML = "Suivant &rarr;"
 

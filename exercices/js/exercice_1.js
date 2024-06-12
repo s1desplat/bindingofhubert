@@ -7,8 +7,7 @@ function addNewBadge(badgeName, lineClass) {
 
 function generateNextButton(href) {
     const nextButton = document.createElement("a");
-    nextButton.classList.add("btn");
-    nextButton.classList.add("suivant");
+    nextButton.classList.add(...["btn", "suivant"]);
     nextButton.setAttribute("href", href);
     nextButton.innerHTML = "Suivant &rarr;"
 
@@ -42,7 +41,7 @@ function exerciceButtonSuccess() {
                 exerciceFailure("Ceci est un champ select, actuellement vide tu peux l'utiliser pour faire une selection d'option fixe, mais ce n'est pas ce qu'on recherche, essayez autre chose !", 'ie3')
             }
         });
-    } else {
+    } else if (titres.length > 1) {
         exerciceFailure("Je vois ce que vous avez essayé de faire ici ! Essayez avec une seule proposition !", "ie3");
     }
 }
@@ -64,7 +63,7 @@ function exerciceLinkSuccess() {
                 exerciceFailure("Et non ceci est un texte en italique, essayer autre chose !", "ie2");
             }
         });
-    } else {
+    } else if (titres.length > 1){
         exerciceFailure("Je vois ce que vous avez essayé de faire ici ! Essayez avec une seule proposition !", "ie2");
     }
 }
@@ -89,7 +88,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
                 exerciceFailure("Le titre est trop petit Hubert à oublié ses lunettes il ne pourras pas le lire, essayez autre chose !", 'ie1');
             }
         });
-    } else {
+    } else if (titres.length > 1) {
         exerciceFailure("Je vois ce que vous avez essayé de faire ici ! Essayez avec une seule proposition !", "ie1");
     }
 })
