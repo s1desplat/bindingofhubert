@@ -1,13 +1,11 @@
-.btn-centered {
-    margin: auto;
-}
 
-.caché {
-    display: none;
-}
 
 
 /* Premier trou  */
+
+/* Afin de compléter le premier trou, */
+/* il te faudra tester chaque classe .texte afin de rendre visible ta balise html */
+/* Attention il faudra faire preuve de style afin de valider l'exercice */
 /* Un seul .texte à la fois  */
 
 
@@ -25,17 +23,21 @@
     border: 1px solid #ccc;
 } */
 
-/* .texte {
+.texte {
 	font-size: 20;
     background-color: #f0f0f0;
     color: #000;
     border: 1px solid #ccc;
-} */
+}
 
 /* Fin du premier trou  */
 
 
 /* Deuxième trou*/
+
+/* Afin de compléter ton deuxième trou, */
+/* Tu devras sélectionner une classe .selection afin de rendre visible ta balise html */
+/* Attention cette fois une seul te permettra d'afficher correctement le résultat de ton souhait */
 /* Un seul .selection à la fois  */
 
 /* .selection {
@@ -67,7 +69,7 @@
     text-decoration: none;
 } */
 
-/* .selection {
+.selection {
     display: inline-block;
     width: 50%;
     font-weight: 700;
@@ -79,6 +81,50 @@
     border-radius: 4px;
     outline: none;
     text-decoration: none;
-} */
+}
 
 /* Fin du deuxième trou  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Pour les curieux.ses*/
+
+.btn-centered {
+    margin: auto;
+}
+
+.caché {
+    display: none;
+}
