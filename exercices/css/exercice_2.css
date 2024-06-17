@@ -1,23 +1,66 @@
-.caché {
-    display: none;
-}
+/* EXERCICE 2 */
+
+
+/* La syntaxe .btn1 vous permet de cibler les éléments qui contiennent la classe btn1 uniquement */
 
 .btn1 {
-    /* Premier trou*/
+    /* Premier trou */
     /* Voici votre premier trou en css, 
-    /* essayer d'afficher le bouton en utilisant la balise display ci-dessous de différentes manières*/
+    /* Essayez d'afficher le bouton en utilisant la balise display ci-dessous de différentes manières*/
     
     /* display: block; */
     /* display: none; */
     /* display: inline-block; */
 }
 
-.btn2 {
+/* La syntaxe .btn.btn2 vous permet de cibler les éléments qui contiennent la classe btn ET btn2 en même temps */
+
+.btn.btn2 {
     /* Premier trou*/
-    /* Attention cette fois-ci le bouton est "techniquement" affiché*/
-    /* mais peut être que changer un paramètre pourrait permettre de l'afficher complètement*/
+    /* Attention cette fois-ci le bouton est "techniquement" affiché */
+    /* mais peut-être que changer un paramètre pourrait permettre de l'afficher complètement */
     
-    /* margin: 0px; */
     /* width: 0px; */
     /* height: 0px; */
+    /* margin: 0px; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* En bas c'est pour les curieux.ses uniquement :) */
+
+
+
+
+
+
+
+
+
+
+
+
+
+.caché {
+    display: none;
+}
+
+.hidden_exo2p2 {
+	margin: -9999px;
 }

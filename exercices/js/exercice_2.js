@@ -22,7 +22,7 @@ function exerciceSuccess() {
     generateNextButton('exercice_3.html');
 
     const successText = document.querySelector('.exercice section p');
-    successText.innerHTML = "<i>Félicitations ! Tu as aidé Hubert le niglo à retrouvé sont crayon rouge du css !<br><br> Clique sur le bouton 'Suivant' afin de poursuivre ton aventure et retrouver plus d'équipement.<br><br><img class='illustration' src='../img/hubert_redsquare.jpeg'></img>"
+    successText.innerHTML = "<i>Félicitations ! Tu as aidé Hubert le Niglo à retrouver son Crayon rouge du css !<br><br> Clique sur le bouton 'Suivant' afin de poursuivre ton aventure.<br><br><img class='illustration' src='../img/hubert_redsquare.jpeg'></img>"
 }
 
 function exerciceFailure(error, id) {
@@ -37,9 +37,9 @@ document.addEventListener("DOMContentLoaded", (e) => {
         const style = window.getComputedStyle(btn1);
         console.log(style.display);
         if (style.display === 'block') {
-            exerciceFailure("Il semblerait que le bouton soit visible, mais il n'est pas centré, essayez de le placé au centre !", 'ie1');
+            exerciceFailure("Il semblerait que le bouton soit visible, mais il n'est pas centré. Essayez de le placer au centre !", 'ie1');
         } else if (style.display === 'none') { 
-            exerciceFailure("Il semblerait que le bouton n'est toujours pas visible, essayez autre chose !", "ie1")
+            exerciceFailure("Il semblerait que le bouton n'est toujours pas visible. Essayez autre chose !", "ie1")
         } else if (style.display === 'inline-block') {
             document.getElementById("section-2").classList.remove("caché");
             document.getElementById('i1').classList.remove("caché");

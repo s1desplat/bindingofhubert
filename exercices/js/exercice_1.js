@@ -19,7 +19,7 @@ function exerciceSuccess() {
     addNewBadge('badge-1', '.ligne-1');
 
     const successText = document.querySelector('.exercice section p');
-    successText.innerHTML = "<i>Félicitations ! Tu as aidé Hubert le niglo à retrouvé sont rouleau à pattiserie de l'html !<br><br> Clique sur le bouton 'Suivant' afin de poursuivre ton aventure et retrouver plus d'équipement.<br><br><img class='illustration' src='../img/hubert_rouleau.webp'></img>"
+    successText.innerHTML = "<i>Félicitations ! Tu as aidé Hubert le Niglo à retrouver sa première pièce d'équipement ! (il est quand même bien long ce rouleau à pâtisserie..)<br><br>Ce n'est pourtant que le début d'une longue aventure qui commence bien !<br><br>Clique sur le bouton 'Suivant' afin de passer à l'épreuve suivante !<br><br><img class='illustration' src='../img/hubert_rouleau.webp'></img>"
 }
 
 function exerciceButtonSuccess() {
