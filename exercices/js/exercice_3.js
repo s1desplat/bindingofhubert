@@ -1,3 +1,5 @@
+let exerciceFinished = false;
+
 function addNewBadge(badgeName, lineClass) {
     const newBadge = document.createElement("div");
     newBadge.classList.add('badge');
@@ -45,7 +47,10 @@ function section2() {
     btn2.onclick = function() {
         if (select != null) {
             if (select.value === "Hubert" && style.borderRadius != "3px") {
-                exerciceSuccess();
+                if (!exerciceFinished) {
+                    exerciceFinished = true;
+                    exerciceSuccess();
+                }
             } else if (style.borderRadius == "3px") {
                 exerciceFailure("Ici la selection s'affiche, mais on ne peut pas lire ni voir ce qu'on a sélectionné. Essayez autre chose !", "ie2");
             } else if (style.display == "none") {

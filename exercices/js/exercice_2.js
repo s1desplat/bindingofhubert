@@ -1,3 +1,5 @@
+let exerciceFinished = false;
+
 function addNewBadge(badgeName, lineClass) {
     const newBadge = document.createElement("div");
     newBadge.classList.add('badge');
@@ -47,8 +49,11 @@ document.addEventListener("DOMContentLoaded", (e) => {
     }
 
     document.getElementById('btn2').onclick = function () {
-        document.getElementById('i2').classList.remove('caché');
-        exerciceSuccess();
+        if (!exerciceFinished) {
+            exerciceFinished = true;
+            document.getElementById('i2').classList.remove('caché');
+            exerciceSuccess();
+        }
     }
 
 })

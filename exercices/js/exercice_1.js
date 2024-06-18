@@ -1,3 +1,5 @@
+let exerciceFinished = false;
+
 function addNewBadge(badgeName, lineClass) {
     const newBadge = document.createElement("div");
     newBadge.classList.add('badge');
@@ -33,7 +35,10 @@ function exerciceButtonSuccess() {
         titres.forEach(titre => {
             if (titre.tagName === 'BUTTON') {
                 document.getElementById('btn3').onclick = function () {
-                    exerciceSuccess();
+                    if (!exerciceFinished) {
+                        exerciceFinished = true;
+                        exerciceSuccess();
+                    }
                 }
             } else if (titre.tagName === 'INPUT') {
                 exerciceFailure("Ceci est un champ input, tu peux y rentrer du texte, mais ce n'est pas ce qu'on recherche, essayez autre chose !", 'ie3');
