@@ -23,12 +23,12 @@
     border: 1px solid #ccc;
 } */
 
-/* .texte {
+.texte {
 	font-size: 20;
     background-color: #f0f0f0;
     color: #000;
     border: 1px solid #ccc;
-} */
+}
 
 /* Fin du premier trou  */
 
@@ -69,7 +69,7 @@
     text-decoration: none;
 } */
 
-/* .selection {
+.selection {
     display: inline-block;
     width: 50%;
     font-weight: 700;
@@ -81,7 +81,7 @@
     border-radius: 4px;
     outline: none;
     text-decoration: none;
-} */
+}
 
 /* Fin du deuxième trou  */
 

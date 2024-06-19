@@ -10,7 +10,7 @@
     
     /* display: block; */
     /* display: none; */
-    /* display: inline-block; */
+    display: inline-block;
 }
 
 /* La syntaxe .btn.btn2 vous permet de cibler les éléments qui contiennent la classe btn ET btn2 en même temps */
@@ -22,7 +22,7 @@
     
     /* width: 0px; */
     /* height: 0px; */
-    /* margin: 0px; */
+    margin: 0px;
 }
 
 

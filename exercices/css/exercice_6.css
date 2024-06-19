@@ -10,3 +10,8 @@
 span.ok {
     text-decoration: line-through;
 }
+
+.beurre {
+    font-weight: bold;
+    font-size: 30px;
+}
